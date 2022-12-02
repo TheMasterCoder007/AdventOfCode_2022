@@ -2,9 +2,9 @@
 
 namespace AdventOfCode2022;
 
-public static class Program
+public static class AocDay1
 {
-    public static void Main(string[] args)
+    public static void CalorieCountingP1(string[] args)
     {
         Console.WriteLine("Hello World!");
     }
