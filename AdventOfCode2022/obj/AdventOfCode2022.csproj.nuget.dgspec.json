@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CoryLamming\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj": {}
+    "D:\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CoryLamming\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj": {
+    "D:\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CoryLamming\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj",
+        "projectUniqueName": "D:\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj",
         "projectName": "AdventOfCode2022",
-        "projectPath": "C:\\Users\\CoryLamming\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj",
+        "projectPath": "D:\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj",
         "packagesPath": "C:\\Users\\CoryLamming\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CoryLamming\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\obj\\",
+        "outputPath": "D:\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CoryLamming\\AppData\\Roaming\\NuGet\\NuGet.Config"

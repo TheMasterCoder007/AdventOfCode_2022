@@ -6,6 +6,28 @@ public static class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Hello World!");
+        // copy command list text file into string for display on console
+        string commandListHeader = System.IO.File.ReadAllText
+            (@"D:\GitHub\Personal_Repositories\AdventOfCode_2022\AdventOfCode2022\inputs\ListOfCommands.txt");
+        
+        Console.WriteLine(commandListHeader);
+        
+        // receive and assess command
+        int daySelect = 0;
+        string? commandInput = Console.ReadLine();
+        if (commandInput != null)
+            daySelect = int.Parse(commandInput);
+        
+        // execute command
+        switch (daySelect)
+        {
+            case 1:
+                AocDay1.CalorieCounting();
+                Console.Read();
+                break;
+            
+            default:
+                break;
+        }
     }
 }
