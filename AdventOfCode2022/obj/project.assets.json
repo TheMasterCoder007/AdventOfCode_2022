@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj",
+      "projectUniqueName": "C:\\Users\\CoryLamming\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj",
       "projectName": "AdventOfCode2022",
-      "projectPath": "D:\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj",
+      "projectPath": "C:\\Users\\CoryLamming\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\AdventOfCode2022.csproj",
       "packagesPath": "C:\\Users\\CoryLamming\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\obj\\",
+      "outputPath": "C:\\Users\\CoryLamming\\GitHub\\Personal_Repositories\\AdventOfCode_2022\\AdventOfCode2022\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CoryLamming\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -8,7 +8,7 @@ public static class Program
     {
         // copy command list text file into string for display on console
         string commandListHeader = System.IO.File.ReadAllText
-            (@"D:\GitHub\Personal_Repositories\AdventOfCode_2022\AdventOfCode2022\inputs\ListOfCommands.txt");
+            (@"..\inputs\ListOfCommands.txt");
         
         Console.WriteLine(commandListHeader);
         

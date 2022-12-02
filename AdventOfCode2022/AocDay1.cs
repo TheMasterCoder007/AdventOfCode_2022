@@ -10,16 +10,14 @@ public static class AocDay1
     {
         // pull input into string and then split the string based on delimiter
         string input = System.IO.File.ReadAllText
-            (@"D:\GitHub\Personal_Repositories\AdventOfCode_2022\AdventOfCode2022\inputs\input1.txt");
+            (@"..\inputs\input1.txt");
         string[] inputSplit = input.Split("\r\n\r\n");
         
         // parse the strings, sum up the calories, and find the elf with the highest count
-        int totalCaloriesPart1 = 0;
-        int totalCaloriesPart2 = 0;
         int elfCaloriesPos1 = 0;
         int elfCaloriesPos2 = 0;
         int elfCaloriesPos3 = 0;
-        // for (int i = 0; i < inputSplit.Length; i++)
+        
         foreach (string tempString in inputSplit)
         {
             // move all values in block to list
