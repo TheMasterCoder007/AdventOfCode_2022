@@ -30,6 +30,11 @@ public static class Program
                 Console.Read();
                 break;
             
+            case 3:
+                AocDay3.RuckSackReorganization();
+                Console.Read();
+                break;
+            
             default:
                 break;
         }
