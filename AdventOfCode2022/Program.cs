@@ -7,8 +7,7 @@ public static class Program
     public static void Main(string[] args)
     {
         // copy command list text file into string for display on console
-        string commandListHeader = System.IO.File.ReadAllText
-            (@"..\inputs\ListOfCommands.txt");
+        string commandListHeader = System.IO.File.ReadAllText(@"..\..\..\inputs\ListOfCommands.txt");
         
         Console.WriteLine(commandListHeader);
         
@@ -23,6 +22,11 @@ public static class Program
         {
             case 1:
                 AocDay1.CalorieCounting();
+                Console.Read();
+                break;
+            
+            case 2:
+                AocDay2.RockPaperScissors();
                 Console.Read();
                 break;
             

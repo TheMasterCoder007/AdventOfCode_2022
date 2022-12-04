@@ -9,8 +9,7 @@ public static class AocDay1
     public static void CalorieCounting()
     {
         // pull input into string and then split the string based on delimiter
-        string input = System.IO.File.ReadAllText
-            (@"..\inputs\input1.txt");
+        string input = System.IO.File.ReadAllText(@"..\..\..\inputs\input1.txt");
         string[] inputSplit = input.Split("\r\n\r\n");
         
         // parse the strings, sum up the calories, and find the elf with the highest count
