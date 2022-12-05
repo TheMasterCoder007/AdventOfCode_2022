@@ -35,6 +35,11 @@ public static class Program
                 Console.Read();
                 break;
             
+            case 4:
+                AocDay4.CampCleanup();
+                Console.Read();
+                break;
+            
             default:
                 break;
         }
