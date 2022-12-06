@@ -4,12 +4,13 @@ namespace AdventOfCode2022;
 
 public static class AocDay2
 {
-    static readonly char OpponentMoveRock = 'A';
-    static readonly char OpponentMovePaper = 'B';
-    static readonly char OpponentMoveScissors = 'C';
-    static readonly char MyMoveRock = 'X';
-    static readonly char MyMovePaper = 'Y';
-    static readonly char MyMoveScissors = 'Z';
+    private const char OpponentMoveRock = 'A';
+    private const char OpponentMovePaper = 'B';
+    private const char OpponentMoveScissors = 'C';
+    private const char MyMoveRock = 'X';
+    private const char MyMovePaper = 'Y';
+    private const char MyMoveScissors = 'Z';
+
     public static void RockPaperScissors()
     {
         // pull input into string and then split the string based on delimiter

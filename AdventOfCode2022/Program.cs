@@ -40,6 +40,16 @@ public static class Program
                 Console.Read();
                 break;
             
+            case 5:
+                AocDay5.SupplyStacks();
+                Console.Read();
+                break;
+            
+            case 6:
+                AocDay6.TuningTrouble();
+                Console.Read();
+                break;
+
             default:
                 break;
         }

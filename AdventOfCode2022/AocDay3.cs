@@ -26,12 +26,10 @@ public static class AocDay3
                 bool itemFound = false;
                 for (int x = splitLength; x < ruckSack.Length; x++)
                 {
-                    if (ruckSack[i] == ruckSack[x])
-                    {
-                        items.Add(CalculateMisplacedItemPriority(ruckSack[i]));
-                        itemFound = true;
-                        break;
-                    }
+                    if (ruckSack[i] != ruckSack[x]) continue;
+                    items.Add(CalculateMisplacedItemPriority(ruckSack[i]));
+                    itemFound = true;
+                    break;
                 }
 
                 if (itemFound)

@@ -8,10 +8,10 @@ namespace AdventOfCode2022;
 
 public static class AocDay4
 {
-    private static readonly int elf1Min = 0;
-    private static readonly int elf1Max = 1;
-    private static readonly int elf2Min = 2;
-    private static readonly int elf2Max = 3;
+    private const int Elf1Min = 0;
+    private const int Elf1Max = 1;
+    private const int Elf2Min = 2;
+    private const int Elf2Max = 3;
     
     public static void CampCleanup()
     {
@@ -32,15 +32,15 @@ public static class AocDay4
             }
 
             // check to see if one elves assignment is fully contained in another (part 1)
-            if ( (assignments[elf1Min] <= assignments[elf2Min] && assignments[elf1Max] >= assignments[elf2Max]) 
-                || (assignments[elf2Min] <= assignments[elf1Min] && assignments[elf2Max] >= assignments[elf1Max]) )
+            if ( (assignments[Elf1Min] <= assignments[Elf2Min] && assignments[Elf1Max] >= assignments[Elf2Max]) 
+                || (assignments[Elf2Min] <= assignments[Elf1Min] && assignments[Elf2Max] >= assignments[Elf1Max]) )
             {
                 numberOfPairsFullyContained++;
             }
             
             // find all overlapping assignments
-            if ((assignments[elf1Min] >= assignments[elf2Min] && assignments[elf1Min] <= assignments[elf2Max])
-                || (assignments[elf2Min] >= assignments[elf1Min] && assignments[elf2Min] <= assignments[elf1Max]))
+            if ((assignments[Elf1Min] >= assignments[Elf2Min] && assignments[Elf1Min] <= assignments[Elf2Max])
+                || (assignments[Elf2Min] >= assignments[Elf1Min] && assignments[Elf2Min] <= assignments[Elf1Max]))
             {
                 numberOfPairsOverlapped++;
             }
