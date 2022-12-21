@@ -49,8 +49,21 @@ public static class Program
                 AocDay6.TuningTrouble();
                 Console.Read();
                 break;
-
-            default:
+            
+            case 7:
+                AocDay7.LowDeviceSpace();
+                Console.Read();
+                break;
+            
+            case 8:
+                AocDay8.TreetopTreeHouse();
+                Console.Read();
+                break;
+            
+            case 9:
+                AocDay9.RopeBridge(1);
+                AocDay9.RopeBridge(2);
+                Console.Read();
                 break;
         }
     }
