@@ -8,63 +8,68 @@ public static class Program
     {
         // copy command list text file into string for display on console
         string commandListHeader = System.IO.File.ReadAllText(@"..\..\..\inputs\ListOfCommands.txt");
-        
         Console.WriteLine(commandListHeader);
         
         // receive and assess command
         int daySelect = 0;
         string? commandInput = Console.ReadLine();
-        if (commandInput != null)
-            daySelect = int.Parse(commandInput);
+        Int32.TryParse(commandInput, out daySelect);
         
-        // execute command
-        switch (daySelect)
+        // if in valid range
+        if (daySelect is > 0 and < 26)
         {
-            case 1:
-                AocDay1.CalorieCounting();
-                Console.Read();
-                break;
-            
-            case 2:
-                AocDay2.RockPaperScissors();
-                Console.Read();
-                break;
-            
-            case 3:
-                AocDay3.RuckSackReorganization();
-                Console.Read();
-                break;
-            
-            case 4:
-                AocDay4.CampCleanup();
-                Console.Read();
-                break;
-            
-            case 5:
-                AocDay5.SupplyStacks();
-                Console.Read();
-                break;
-            
-            case 6:
-                AocDay6.TuningTrouble();
-                Console.Read();
-                break;
-            
-            case 7:
-                AocDay7.LowDeviceSpace();
-                Console.Read();
-                break;
-            
-            case 8:
-                AocDay8.TreetopTreeHouse();
-                Console.Read();
-                break;
-            
-            case 9:
-                AocDay9.RopeBridge(1);
-                AocDay9.RopeBridge(2);
-                Console.Read();
-                break;
+            // execute command
+            switch (daySelect)
+            {
+                 case 1:
+                     AocDay1.CalorieCounting();
+                     break;
+                 
+                 case 2:
+                     AocDay2.RockPaperScissors();
+                     break;
+                 
+                 case 3:
+                     AocDay3.RuckSackReorganization();
+                     break;
+                 
+                 case 4:
+                     AocDay4.CampCleanup();
+                     break;
+                 
+                 case 5:
+                     AocDay5.SupplyStacks();
+                     break;
+                 
+                 case 6:
+                     AocDay6.TuningTrouble();
+                     break;
+                 
+                 case 7:
+                     AocDay7.LowDeviceSpace();
+                     break;
+                 
+                 case 8:
+                     AocDay8.TreetopTreeHouse();
+                     break;
+                 
+                 case 9:
+                     AocDay9.RopeBridge(1);
+                     AocDay9.RopeBridge(2);
+                     break;
+                 
+                 case 10:
+                     AocDay10.CathodeRayTube();
+                     break;
+                 
+                 default:
+                     break;
+            }   
+        }
+        // else display error
+        else
+        {
+            Console.WriteLine("The input did not match valid parameters");
         }
     }
 }
