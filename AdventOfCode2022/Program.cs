@@ -62,6 +62,10 @@ public static class Program
                      AocDay10.CathodeRayTube();
                      break;
                  
+                 case 11:
+                     AocDay11.MonkeyInTheMiddle();
+                     break;
+                 
                  default:
                      break;
             }   

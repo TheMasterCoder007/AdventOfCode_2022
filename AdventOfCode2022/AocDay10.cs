@@ -54,8 +54,8 @@ public static class AocDay10
     /// <c>ExecuteInstructionSet</c> calculates the signal strength of the device, keeps track
     /// of the clock ticks, and executes the instruction set that moves the CRT sprite (_variableX)
     /// </summary>
-    /// <param name="ticksToComplete"></param>
-    /// <param name="valueToAdd"></param>
+    /// <param name="ticksToComplete">Number of ticks the process takes to complete</param>
+    /// <param name="valueToAdd">Value to add to the x register when the process completes</param>
     private static void ExecuteInstructionSet(int ticksToComplete, int valueToAdd)
     {
         // begin execution of command
@@ -89,7 +89,7 @@ public static class AocDay10
     /// <c>ToggleCrtPixels</c> writes to the the pixels one at a time (one per clock tick)
     /// using the instruction set (if CRT sprite covers current pixel write '#', else write '.')
     /// </summary>
-    /// <param name="ticksToComplete"></param>
+    /// <param name="ticksToComplete">Number of ticks the process takes to complete</param>
     private static void ToggleCrtPixels(int ticksToComplete)
     {
         for (int ticks = 0; ticks < ticksToComplete; ticks++)
